@@ -29,11 +29,11 @@ export const UserPage = () => {
   }, [getUser]);
 
   const editRedirect = () => {
-    history.push(`/editUser/${user._id}`);
+    history.push(`/editUser/${id}`);
   };
 
   const removeRedirect = () => {
-    history.push(`/deleteUser/${user._id}`);
+    history.push(`/deleteUser/${id}`);
   };
 
   if (loading) {
@@ -42,8 +42,6 @@ export const UserPage = () => {
   return (
     <>
       {user &&
-      // <Link to={`/Profile/${user.id}`}>
-
       <div className='user-page'>
         <p>User name: {user.userName}</p>
         <p>First name: {user.firstName}</p>
@@ -55,7 +53,6 @@ export const UserPage = () => {
           <button className='btn' onClick={removeRedirect}>Delete</button>
         </div>
       </div>
-      // </Link>
       }
     </>
   );

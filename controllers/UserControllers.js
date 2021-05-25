@@ -94,21 +94,21 @@ const getUserByUserName2 = async (req, res) => {
   }
 };
 
-const editUser = async (req, res) => {
+const editUser2 = async (req, res) => {
   try {
     const { id } = req.params;
     const updates = req.body;
-    const user = await Services.editUser(id, updates);
+    const user = await Services.editUser2(id, updates);
     res.json(user);
   } catch (e) {
     res.status(500).json({ message: 'Something went wrong.' });
   }
 };
 
-const deleteUser = async (req, res) => {
+const deleteUser2 = async (req, res) => {
   try {
     const { id } = req.params;
-    const user = await Services.deleteUser(id);
+    const user = await Services.deleteUser2(id);
     res.json(user);
   } catch (e) {
     res.status(500).json({ message: 'Something went wrong.' });
@@ -121,6 +121,6 @@ export default {
   getAllUsers2,
   getUserById2,
   getUserByUserName2,
-  editUser,
-  deleteUser,
+  editUser2,
+  deleteUser2,
 };
