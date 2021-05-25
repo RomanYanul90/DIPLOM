@@ -1,0 +1,36 @@
+{
+  "name": "mern_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon --exec babel-node index.js",
+    "client": "npm run start --prefix client",
+    "dev": " concurrently \"npm run server\" \"npm run client\"",
+    "lint": "eslint './**' --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.9",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.22.0",
+    "nodemon": "^2.0.6"
+  }
+}

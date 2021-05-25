@@ -1,0 +1,12 @@
+{
+  "port": 5000,
+  "jwtSecret": "Roman-MERN_App_Secret-Token",
+  "mongoUri": "mongodb+srv://roman:roman123@cluster0.bm057.mongodb.net/newBD?retryWrites=true&w=majority",
+  "baseURL": "http://localhost:5000",
+  "dataBaseConfig": {
+    "user": "root",
+    "host": "localhost",
+    "password": "romay123",
+    "database": "securedb"
+  }
+}
