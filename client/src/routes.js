@@ -14,7 +14,6 @@ import {RemoveUserPage} from "./components/RemoveUserPage";
 
 export const useRoutes = isAuth => {
   if (isAuth) {
-      console.log("HEREEE");
     return (
       <Switch>
         <Route path='/userPage/:id' exact>

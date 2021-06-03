@@ -14,7 +14,6 @@ function App() {
   if (!ready) {
     return <LoadingPage/>;
   }
-  console.log("userId",userId);
   return (
     <div className='container'>
       <AuthContext.Provider value={{token, userId, login, logout, isAuth}}>

@@ -14,7 +14,6 @@ export const UserPage = () => {
   const userId = useParams().id;
   const id = auth.userId;
 
-  console.log("idFromURL", userId);
   const getUser = useCallback(async () => {
     try {
       const result = await request(`/api/auth/user/${id}`, "GET", null, {Authorization: `Bearer ${token}`});

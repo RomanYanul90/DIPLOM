@@ -51,6 +51,5 @@ export const LoginPage = () => {
         <button className='btn' onClick={loginHandler}>Log in</button>
       </form>
     </section>
-
   );
 };

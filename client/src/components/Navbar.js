@@ -28,7 +28,6 @@ export const Navbar = () => {
     try {
       const result = await request(`/api/auth/user/${id}`, "GET", null, {Authorization: `Bearer ${auth.token}`});
       const [user] = result;
-      console.log("YUSEEEEr", user);
 
       setUser(user.userName);
     } catch (e) {
@@ -43,7 +42,7 @@ export const Navbar = () => {
 
   return (
     <header className='main-header'>
-      <span className='header-title'>Stage 3</span>
+      <span className='header-title'>Secure-Web-App</span>
       <nav className='header-navigation'>
         <ul>
           <li><NavLink to='/createAdvert'>Create</NavLink></li>
